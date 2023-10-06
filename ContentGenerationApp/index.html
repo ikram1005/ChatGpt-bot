@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        #content {
+            font-size: 20px;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Content Generator</h1>
+    <button onclick="redirectToGenerator('shayari')">Generate Shayari</button>
+    <button onclick="redirectToGenerator('story')">Generate Story</button>
+    <button onclick="redirectToGenerator('quote')">Generate Quote</button>
+    <button onclick="redirectToGenerator('joke')">Generate Joke</button>
+
+    <script>
+        function redirectToGenerator(type) {
+            if (type === 'story') {
+                window.location.href = 'story.html';
+            } else if (type === 'shayari') {
+                window.location.href = 'shayari.html';
+            } else if (type === 'quote') {
+                window.location.href = 'quote.html';
+            } else if (type === 'joke') {
+                window.location.href = 'joke.html';
+            }
+        }
+    </script>
+
+</body>
+</html>
